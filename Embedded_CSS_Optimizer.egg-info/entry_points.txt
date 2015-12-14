@@ -1,0 +1,3 @@
+[gui_scripts]
+Embedded-CSS-Optimizer = Embedded_CSS_Optimizer.embeddedcssoptimizer:main
+

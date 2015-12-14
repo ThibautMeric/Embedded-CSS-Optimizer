@@ -92,7 +92,7 @@ def main():
         ######################
 
     InitializeStep1( lfStep1, lfStep2, lfWarning, lfStep3, WindowSetting, HtmlPath, CssPath, CssTable, HtmlTable, ModifierDict, WarningList, CBStep2State, ButtonList, ChoiceList, ChoiceList2)
-    InitializeStep2(lfStep2, ModifierDict, CBStep2State, WindowSetting, ChoiceList, ChoiceList2, Bottom, CssTable, ButtonList)
+    InitializeStep2(lfStep2, ModifierDict, CBStep2State, WindowSetting, ChoiceList, ChoiceList2, CssTable, ButtonList)
     InitializeWarning(lfWarning, WindowSetting, WarningList)
     InitializeStep3( lfStep1, lfStep2, lfWarning, lfStep3, WindowSetting, Version, CssTable, HtmlPath, CssPath, HtmlTable, WarningList, CBStep2State, ModifierDict, ChoiceList2)
 
