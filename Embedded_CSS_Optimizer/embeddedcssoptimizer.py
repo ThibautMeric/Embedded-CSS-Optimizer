@@ -64,7 +64,7 @@ def main():
     Window = Tk()
 
     Window.resizable(width=False, height=False)
-    Window.title("Microchip CSS Optimizer " + Version)
+    Window.title("Embedded CSS Optimizer " + Version)
     WindowSetting = {}
     if(platform.system() == 'Windows'):
         WindowSetting["Reduce"] = 1

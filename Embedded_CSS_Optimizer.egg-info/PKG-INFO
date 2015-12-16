@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: Embedded-CSS-Optimizer
+Version: 1.0
+Summary: Remove unused CSS definitions
+Home-page: www.microchip.com/iot/
+Author: Iot & HASG Group
+Author-email: xxxxxx@microchip.com
+License: UNKNOWN
+Description: The main objective of this program is to lighten CSS files. This program will read your HTML files and your CSS files. Then, it will remove all definitions unused in the CSS file. Thanks to the GUI, you can customize this selection the way you prefer.
+Keywords: CSS HTML
+Platform: Operating System :: MacOS :: MacOS X
+Platform: Operating System :: Microsoft :: Windows
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: DevelopersLicense :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
