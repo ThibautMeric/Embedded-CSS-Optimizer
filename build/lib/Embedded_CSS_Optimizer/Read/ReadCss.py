@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-from Microchip_CSS_Optimizer.Others.AddToTable import *
-=======
 from Embedded_CSS_Optimizer.Others.AddToTable import *
->>>>>>> f550c206708bf5699b2e6bd9499b9d8e9dd93ba3
 
 def ReadCSS(CssPath, CssTable, ModifierDict):
 

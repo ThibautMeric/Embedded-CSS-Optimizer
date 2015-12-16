@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-from Microchip_CSS_Optimizer.Step2.CheckbuttonExtended import *
-=======
 from Embedded_CSS_Optimizer.Step2.CheckbuttonExtended import *
->>>>>>> f550c206708bf5699b2e6bd9499b9d8e9dd93ba3
 from math import sqrt
 
 def FillCanvasStep2(lfStep2, ModifierDict, CssTable, ButtonList, ChoiceList, ChoiceList2, WindowSetting):
