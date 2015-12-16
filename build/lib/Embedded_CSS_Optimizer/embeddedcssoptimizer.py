@@ -64,7 +64,11 @@ def main():
     Window = Tk()
 
     Window.resizable(width=False, height=False)
+<<<<<<< HEAD
     Window.title("Embedded CSS Optimizer " + Version)
+=======
+    Window.title("Microchip CSS Optimizer " + Version)
+>>>>>>> f550c206708bf5699b2e6bd9499b9d8e9dd93ba3
     WindowSetting = {}
     if(platform.system() == 'Windows'):
         WindowSetting["Reduce"] = 1
@@ -92,7 +96,11 @@ def main():
         ######################
 
     InitializeStep1( lfStep1, lfStep2, lfWarning, lfStep3, WindowSetting, HtmlPath, CssPath, CssTable, HtmlTable, ModifierDict, WarningList, CBStep2State, ButtonList, ChoiceList, ChoiceList2)
+<<<<<<< HEAD
     InitializeStep2(lfStep2, ModifierDict, CBStep2State, WindowSetting, ChoiceList, ChoiceList2, Bottom, CssTable, ButtonList)
+=======
+    InitializeStep2(lfStep2, ModifierDict, CBStep2State, WindowSetting, ChoiceList, ChoiceList2, CssTable, ButtonList)
+>>>>>>> f550c206708bf5699b2e6bd9499b9d8e9dd93ba3
     InitializeWarning(lfWarning, WindowSetting, WarningList)
     InitializeStep3( lfStep1, lfStep2, lfWarning, lfStep3, WindowSetting, Version, CssTable, HtmlPath, CssPath, HtmlTable, WarningList, CBStep2State, ModifierDict, ChoiceList2)
 

@@ -12,7 +12,7 @@ except:
 from Embedded_CSS_Optimizer.Step2.RefreshStep2 import *
 import platform
 
-def InitializeStep2(lfStep2, ModifierDict, CBStep2State, WindowSetting, ChoiceList, ChoiceList2, Bottom, CssTable, ButtonList):
+def InitializeStep2(lfStep2, ModifierDict, CBStep2State, WindowSetting, ChoiceList, ChoiceList2, CssTable, ButtonList):
 
     #Definition for Step 2
 
@@ -32,7 +32,7 @@ def InitializeStep2(lfStep2, ModifierDict, CBStep2State, WindowSetting, ChoiceLi
     lfModifier = tk.LabelFrame(lfStep2, name="lfmodifier")
     TitleStep2 = Label(lfStep2, text="Select the desired definition to add to your CSS", name="titlestep2")
     ModifierList = (ModifierDict["Modifier1"], ModifierDict["Modifier2"], ModifierDict["Modifier3"], ModifierDict["Modifier4"])
-    CallRefreshStep2 = lambda event: RefreshStep2("", Bottom, lfStep2, CBStep2State, ModifierDict, CssTable, ButtonList, ChoiceList, ChoiceList2, WindowSetting)
+    CallRefreshStep2 = lambda event: RefreshStep2("", lfStep2, CBStep2State, ModifierDict, CssTable, ButtonList, ChoiceList, ChoiceList2, WindowSetting)
     CBModifier = ttk.Combobox(lfStep2, values=ModifierList, state='readonly', name="cbmodifier")
     CBModifier.set(ModifierList[0])
     CBModifier.bind('<<ComboboxSelected>>', CallRefreshStep2)
@@ -43,7 +43,7 @@ def InitializeStep2(lfStep2, ModifierDict, CBStep2State, WindowSetting, ChoiceLi
     CBViewChoice.set(ChoiceList2[0])
     CBViewChoice.bind('<<ComboboxSelected>>', CallRefreshStep2)
     SearchBar = Entry(lfStep2, width=int(20 * WindowSetting["Reduce"]), name="searchbar")
-    CallRefreshStep2ForButton = lambda: RefreshStep2("", Bottom, lfStep2, CBStep2State, ModifierDict, CssTable, ButtonList, ChoiceList, ChoiceList2, WindowSetting)
+    CallRefreshStep2ForButton = lambda: RefreshStep2("", lfStep2, CBStep2State, ModifierDict, CssTable, ButtonList, ChoiceList, ChoiceList2, WindowSetting)
     if(platform.system() == 'Windows'):BSearch = ttk.Button(lfStep2, text="Search", command=CallRefreshStep2ForButton, name="bsearch")
     else: BSearch = tk.Button(lfStep2, text="Search", command=CallRefreshStep2ForButton, name="bsearch")
     SearchBar.bind("<Return>", CallRefreshStep2)
