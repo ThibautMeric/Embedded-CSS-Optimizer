@@ -11,7 +11,7 @@ except:
     from Tkinter import *
 
 def OpenHTML(lfStep1):
-    filepath2 = askopenfilename(title="Open a file", filetypes=[('HTML files', '.html'),('HTM files', '.htm'),('ico files', '.ico')])
+    filepath2 = askopenfilename(title="Open a file", filetypes=[('HTML files', '.html'),('HTM files', '.htm'),('inc files', '.inc')])
     if len(filepath2) > 0:
         lfStep1.children["entryhtml"].delete(0, END)
         lfStep1.children["entryhtml"].insert(0, filepath2)
