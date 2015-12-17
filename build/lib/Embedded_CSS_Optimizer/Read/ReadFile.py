@@ -54,7 +54,9 @@ def ReadFile( lfStep1, lfStep2, lfWarning, lfStep3, CssPath, HtmlPath, CssTable,
         RemoveCss = []
 
         for i in range(0, len(HtmlPath)):
-            if(HtmlPath[i][-5] != "." or HtmlPath[i][-4] != "h" or HtmlPath[i][-3] != "t" or HtmlPath[i][-2] != "m" or HtmlPath[i][-1] != "l"):
+            if((HtmlPath[i][-5] != "." or HtmlPath[i][-4] != "h" or HtmlPath[i][-3] != "t" or HtmlPath[i][-2] != "m" or HtmlPath[i][-1] != "l")
+            and(HtmlPath[i][-4] != "." or HtmlPath[i][-3] != "h" or HtmlPath[i][-2] != "t" or HtmlPath[i][-1] != "m")
+            and(HtmlPath[i][-4] != "." or HtmlPath[i][-3] != "i" or HtmlPath[i][-2] != "n" or HtmlPath[i][-1] != "c")):
                 Error += "\n..." + HtmlPath[i][-40:] + ": Not HTML" + "\n"
                 RemoveHtml.append(i)
         for i in RemoveHtml[::-1]:
